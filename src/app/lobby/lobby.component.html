@@ -1,0 +1,8 @@
+Welcome, you can <strong>join</strong> a created room or <strong>create</strong> a new one an then invite your friends.
+<div>
+    <button (click)="clickCreate()">Create</button>
+    <div>
+        <input #joincode (keyup)="0" />
+        <button [disabled]="!joincode.value" (click)="clickJoin()">Join</button>
+    </div>
+</div>
